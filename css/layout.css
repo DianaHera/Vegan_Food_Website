@@ -1,0 +1,114 @@
+/*layout mare*/
+#grid-pagina {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "welcome welcome welcome welcome welcome" "orar orar produse produse produse" "promotii anunturi produse produse produse" "promotii anunturi produse produse produse" "index-intrebari retete retete retete fig1";
+}
+
+html {
+  font-size: 20px;
+  font-family: "Truculenta", sans-serif;
+  font-weight: 400;
+  font-style: 10em;
+  transition: font-size 1s ease;
+}
+
+#grid-pagina > * {
+  outline: 2px solid var(--culoare2);
+  padding: 1em;
+}
+
+#grid-pagina > figure {
+  margin: 0;
+}
+
+#welcome {
+  grid-area: welcome;
+}
+
+#promotii {
+  grid-area: promotii;
+}
+
+#anunturi {
+  grid-area: anunturi;
+}
+
+#orar {
+  grid-area: orar;
+}
+
+#fig1 {
+  grid-area: fig1;
+}
+
+#produse {
+  grid-area: produse;
+}
+
+#index-intrebari {
+  grid-area: index-intrebari;
+}
+
+#retete {
+  grid-area: retete;
+}
+
+.intro-oferte {
+  font-size: 1.5em;
+}
+
+.imagini {
+  width: 80%;
+}
+
+.img {
+  width: 80%;
+}
+
+.img2 {
+  width: 80%;
+}
+
+.fig0 {
+  width: 80%;
+}
+
+.fg-img {
+  width: 80%;
+}
+
+.img3 {
+  width: 80%;
+}
+
+#fig1 {
+  width: 80%;
+}
+
+/*layout mediu*/
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  html {
+    font-size: 18px;
+    font-style: 7em;
+  }
+  #grid-pagina {
+    gap: 6px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "welcome welcome welcome" "orar orar orar" "promotii promotii produse" "anunturi index-intrebari index-intrebari" "retete retete fig1";
+  }
+}
+/*layout mic*/
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 16px;
+    font-style: 4em;
+  }
+  #grid-pagina {
+    display: block;
+  }
+  .container-scroll {
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,119 @@
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@400;700&display=swap');
+
+
+$theme1-bg-color: #f5f5f5;
+$theme1-text-color: #333;
+$theme1-primary-color: #007bff;
+
+$theme2-bg-color: #1c1c1e;
+$theme2-text-color: #f5f5f5;
+$theme2-primary-color: #ff5722;
+
+
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+);
+
+
+$range-thumb-size: calc(1em + 50%);
+
+$range-thumb-color: #007bff; 
+
+$range-slider-color: #ced4da;
+
+$border-radius: 0.25rem; 
+$border-radius-lg: 0.5rem; 
+$border-radius-sm: 0.125rem; 
+
+$h1-font-size: 2.5rem; 
+$h2-font-size: 2rem; 
+$h3-font-size: 1.75rem; 
+$h4-font-size: 1.5rem; 
+$h5-font-size: 1.25rem; 
+$h6-font-size: 1rem; 
+
+$font-family-base: 'Truculenta', sans-serif;
+
+$body-bg: $theme1-bg-color;
+$body-color: $theme1-text-color;
+$primary: $theme1-primary-color;
+
+.btn-input {
+    background-color: #e2abda;
+    border-radius: $border-radius;
+}
+
+.btn-range {
+ 
+    &::-webkit-slider-thumb {
+        width: $range-thumb-size;
+        height: $range-thumb-size;
+        background-color: $range-thumb-color;
+        border: none;
+        border-radius: 50%;
+        transition: background-color 0.15s ease-in-out;
+        transform: translateY(-50%);
+    }
+
+    &::-moz-range-thumb {
+        width: $range-thumb-size;
+        height: $range-thumb-size;
+        background-color: $range-thumb-color;
+        border: none;
+        border-radius: 50%;
+        transition: background-color 0.15s ease-in-out;
+        transform: translateY(-50%);
+    }
+
+    &::-webkit-slider-runnable-track {
+        background-color: $range-slider-color;
+        height: 4px; 
+        border-radius: $border-radius-lg;
+    }
+
+    &::-moz-range-track {
+        background-color: $range-slider-color;
+        height: 4px;
+        border-radius: $border-radius-lg; 
+    }
+}
+ 
+
+.theme1 {
+    background-color: $theme1-bg-color;
+    color: $theme1-text-color;
+    .btn-primary {
+        background-color: $theme1-primary-color;
+    border-color: $theme1-primary-color;
+  }
+}
+
+
+.theme2 {
+  background-color: $theme2-bg-color;
+  color: $theme2-text-color;
+  .btn-primary {
+    background-color: $theme2-primary-color;
+    border-color: $theme2-primary-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-md {
+    font-size: 1.25rem; // 20px
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-lg {
+    font-size: 1.5rem; // 24px
+  }
+}
+
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";

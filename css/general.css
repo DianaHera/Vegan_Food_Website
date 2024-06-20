@@ -1,0 +1,227 @@
+body {
+  --culoare1: #A6F0D5;
+  --culoare2: #56C3F0;
+  --culoare3: #187E4D;
+  --culoare4: #D99ABF;
+  --culoare5: #2E4A99;
+  --culoare6: #7699f8;
+  --culoare7: #132b6f;
+  --culoare-inchisa: #66A637;
+  --culoare-deschisa: #DBFFC4;
+  --culoare-text: #5B004E;
+  --culoare-text-selectat: #6ECECB;
+  --culoare-text-deschis: #e2abda;
+  --spatiere: 100px;
+  padding-left: var(--spatiere);
+  padding-right: var(--spatiere);
+}
+
+header,
+footer {
+  box-sizing: border-box;
+  border: solid var(--culoare3);
+  border-radius: 50%;
+  text-align: center;
+}
+
+#link-top {
+  position: fixed;
+  bottom: 0.3em;
+  opacity: 0.5;
+  left: 0.3em;
+  width: 3rem;
+  box-sizing: border-box;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 50px;
+  border: solid var(--culoare-text-selectat);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: var(--culoare-deschisa);
+  box-shadow: 0px 0px 5px 5px var(--culoare-text-selectat) inset;
+  text-decoration: none;
+}
+
+#link-top:hover {
+  opacity: 1;
+}
+
+#sageata {
+  transform: scale(1);
+  transition: transform 700ms linear;
+}
+
+#link-top:hover > #sageata {
+  transform: translateY(0%) rotate(0deg);
+  transform: scale(1.5);
+}
+
+#tab-orar {
+  width: 100%;
+  border-spacing: 3px;
+  border-collapse: collapse;
+}
+
+#tab-orar th {
+  border: 3px solid var(--culoare-text);
+}
+
+#tab-orar td {
+  border: 1px solid var(--culoare-text);
+  cursor: pointer;
+  background-color: none;
+  transition: all 0, 75s linear;
+  text-align: center;
+}
+
+#tab-orar tbody tr:nth-child(even) {
+  box-shadow: 2px 2px 2px 2px var(--culoare2);
+  font-size: 100%;
+}
+
+#tab-orar tbody tr:nth-child(odd) {
+  box-shadow: 2px 2px 2px 2px var(--culoare1);
+}
+
+#tab-orar tr:nth-child(even):hover,
+#tab-orar tr:nth-child(odd):hover {
+  background-color: var(--culoare-deschisa);
+  font-size: 120%;
+}
+
+.container-iframe {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.container-iframe iframe {
+  width: 80%;
+  height: auto;
+}
+
+.taburi-iframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.taburi-iframe > a {
+  /* display: flexbox; */
+  display: block;
+  border: 2px solid var(--culoare3);
+  background-color: var(--culoare1);
+  margin-right: 0;
+  padding: 0.5rem;
+  border-start-end-radius: 50%;
+  box-shadow: 0px 7px 7px var(--culoare3) inset;
+  color: var(--culoare-text);
+  transition: all 1s linear;
+}
+
+.taburi-iframe > a:hover {
+  color: var(--culoare-text-deschis);
+  border-left: 2px solid var(--culoare-deschisa);
+}
+
+.taburi-iframe > a:last-child {
+  margin-bottom: 0;
+}
+
+.fa-solid.fa-phone {
+  font-size: normal;
+  animation-name: rotatieIcon;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+
+#fa-solid.fa-phone :hover {
+  animation-play-state: running;
+}
+
+@keyframes rotatieIcon {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*----------------------------------PRINT------------------------------*/
+@media print {
+  /* Bannerul */
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border: 1px dashed black;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 9999;
+  }
+  /* Ascunderea elementelor media */
+  img,
+  video,
+  iframe,
+  .media-description,
+  #link-top {
+    display: none !important;
+  }
+  /* Gridul */
+  #grid-pagina {
+    display: block !important;
+  }
+  /* Stilizare linkuri */
+  a {
+    text-decoration: none !important;
+    color: #000000 !important;
+  }
+  /* Headingul de nivel 1 */
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    text-decoration: underline;
+    z-index: 9998;
+  }
+  /* Ascunderea meniului */
+  .meniu {
+    display: none !important;
+  }
+  /* Page break dupa heading si inaintea footerului */
+  header {
+    page-break-after: always;
+  }
+  footer {
+    page-break-before: always;
+  }
+  /* Watermark */
+  body::after {
+    content: "Hera Diana";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 2cm;
+    border: 5px double var(--culoare-text);
+    background-color: transparent;
+    opacity: 0.65;
+    line-height: 2cm;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  /* Margini pentru pagini stanga si dreapta */
+  @page : left {
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+  }
+  @page : right {
+    margin-left: 0.5cm;
+    margin-right: 2.5cm;
+  }
+}

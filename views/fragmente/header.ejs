@@ -1,0 +1,85 @@
+<body>
+    <header class="c1" id="h1">
+        <h1>Good Food By D</h1>
+
+        <div class="toggle-container">
+            <label id="schimba_tema" class="toggle">
+                <input type="checkbox" id="tema_toggle">
+                <div class="slider"></div>
+                <div class="icons">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </label>
+        </div>
+
+        <script src="script.js"></script>
+
+        <!--<button id="schimba_tema">Schimba tema</button>
+        <script src="/resurse/js/tema.js"></script>-->
+    </header>
+    <nav class="nav">
+        <label id="hamburger" for="ch-menu">
+            <img src="./resurse/imagini/heart-5496249_640.png" alt="menu">
+        </label>
+        <input id="ch-menu" type="checkbox">
+        <ul class="meniu">
+            <li>
+                <div id="home">Home</div>
+                <div id="acasa-meniu"><span class="fas fa-regular fa-house"></span></div>
+                <ul>
+                    <li><a href="/index#welcome">Bine ati venit</a></li>
+                    <li><a href="/index#promotii">Promotii</a></li>
+                    <li><a href="/index#anunturi">Anunturi</a></li>
+                    <li><a href="/index#produse">Oferta</a></li>
+                    <li><a href="/index#orar">Orar</a></li>
+                    <li><a href="/index#index-intrebari">Intrebari</a></li>
+                    <li><a href="/index#retete">Retete</a></li>
+                    <li><a href="/galerie-pagina">Galerie statica</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/inregistrare">Inregistrare</a>
+            </li>
+            <li>
+                <div>Despre</div>
+                <ul>
+                    <li><a href="/despre#prezentare">Prezentare</a></li>
+                    <li><a href="/despre#istoric">Istoric</a></li>
+                    <li><a href="/despre#motivatie">Motivatie</a></li>
+                </ul>
+            </li>
+            <li>
+                <div>Produse</div>
+                <ul>
+                    <li><a href="/produse">Toate</a></li>
+                    <li><a href="/produse/?tip=condimente">Condimente</a></li>
+                    <li><a href="/produse/?tip=bauturi">Bauturi</a></li>
+                    <li><a href="/produse/?tip=suplimente alimentare">Suplimente</a></li>
+                    <li><a href="/produse/?tip=dulciuri">Dulciuri</a></li>
+                    <li><a href="/produse/?tip=gustări">Gustări</a></li>
+                    <li><a href="/produse/?tip=conserve">Conserve</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="/cos-virtual">Cos</a>
+            </li>
+            <li>
+                <a href="/contact">Contact</a>
+            </li>
+            <!--- <li>
+                <div>Produse</div>
+                <ul>
+                    <li><a href="/produse">Toate</a></li>
+                    <li><a href="/produse/?tip=cofetarie"> Articole de hartie </a></li>
+                    <li><a href="/produse/?tip=gelaterie"> Instrumente de scris </a></li>
+                    <li><a href="/produse/?tip=patiserie"> Accesorii de birou </a></li>
+                </ul>
+            </li>-->
+
+            <%- include("submeniu-administrare.ejs") %>
+                <%- include("submeniu-utilizator-logat.ejs") %>
+
+        </ul>
+    </nav>

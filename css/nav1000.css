@@ -1,0 +1,16 @@
+nav {
+  --inaltime-meniu: 2.2em;
+  --latime-buton: 120px;
+}
+
+#acasa-meniu {
+  display: block;
+}
+
+#home {
+  display: none;
+}
+
+ul.meniu > li a:hover:after {
+  display: none;
+}

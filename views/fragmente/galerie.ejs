@@ -1,0 +1,18 @@
+<section id="galerie-statica">
+    <h2>Galerie</h2>
+    <div id="grid-galerie">
+        <% var Vsfert_ora=["1","2","3","4"]; var d=new Date(); var sfert_ora_curent=Vsfert_ora[Math.floor(d.getMinutes()
+            / 15)]; for(let imag of locals.imagini){ if (imag?.sfert_ora?.includes(sfert_ora_curent)){ %>
+            <figure>
+                <picture>
+                    <source scrset="<%= imag.fisier_mediu %>" media="(max-width:1200px)" />
+                    <img src="<%= imag.fisier %>" alt="mancare">
+                </picture>
+                <figcaption>
+                    <%= imag.descriere %>
+                </figcaption>
+            </figure>
+            <% } %>
+                <% } %>
+    </div>
+</section>

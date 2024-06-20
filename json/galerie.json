@@ -1,0 +1,245 @@
+{
+    "cale_galerie": "resurse/imagini/galerie",
+    "imagini": [
+        {
+            "fisier": "avocado.jpg",
+            "titlu": "Avocado",
+            "descriere": "Avocado dragalas",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "bread.jpg",
+            "titlu": "Paine",
+            "descriere": "Multe paini",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "curry.jpg",
+            "titlu": "Curry",
+            "descriere": "Curry d-ala bun",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "cookies.jpg",
+            "titlu": "Cookies",
+            "descriere": "Fursecuri americane",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "chocolates.jpg",
+            "titlu": "Ciocolata",
+            "descriere": "Ciocolata belgiana",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "blueberries.jpg",
+            "titlu": "Afine",
+            "descriere": "Afine de cultura",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "Hamburger.jpg",
+            "titlu": "Burger",
+            "descriere": "Burger vegan",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "broccoli.jpg",
+            "titlu": "Broccoli",
+            "descriere": "Ploaie de mini copacei",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "cabbage.jpg",
+            "titlu": "Varza",
+            "descriere": "Nu suntem varza, tu esti",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "coffee-beans.jpg",
+            "titlu": "Cafea",
+            "descriere": "S-a imprastiat cafeaua",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "food.jpg",
+            "titlu": "Food",
+            "descriere": "V-am pregatit cateva farfurii",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "healthy.jpg",
+            "titlu": "Healthy",
+            "descriere": "Te astept la cina",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "market.jpg",
+            "titlu": "Market",
+            "descriere": "La shopping ca in India",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "meat-skewer.jpg",
+            "titlu": "Frigarui",
+            "descriere": "Hai ca punem de gratar",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "mushrooms.jpg",
+            "titlu": "Ciuperci",
+            "descriere": "Ciupercute slim-fit",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "noodles.jpg",
+            "titlu": "Paste1",
+            "descriere": "Facem paste",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "onions.jpg",
+            "titlu": "Ceapa",
+            "descriere": "Esentialele in bucatarie",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "pancakes.jpg",
+            "titlu": "Clatite",
+            "descriere": "Clatitute",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "pasta.jpg",
+            "titlu": "Paste2",
+            "descriere": "S-au facut pastele",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "salad.jpg",
+            "titlu": "Salata",
+            "descriere": "Legumele sunt sanatoase",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "star-anise.jpg",
+            "titlu": "Anason",
+            "descriere": "Anason pentru vin fiert",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "strawberry-dessert.jpg",
+            "titlu": "Desert",
+            "descriere": "Desert la pahar",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "tomatoes.jpg",
+            "titlu": "Rosii",
+            "descriere": "Rosii din gradina",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "tray.jpg",
+            "titlu": "Nuci",
+            "descriere": "Ti-am pregatit un platou",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "vegetables.jpg",
+            "titlu": "Legume",
+            "descriere": "Legume verzi",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "watermelon.jpg",
+            "titlu": "Pepene",
+            "descriere": "Pepene cu dragoste",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "legumefresh.jpg",
+            "titlu": "Legume",
+            "descriere": "Legume fresh",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "Sweet_and_sour.jpg",
+            "titlu": "Tofu",
+            "descriere": "Tofu sweet&sour facut de voi",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "capsuni.jpg",
+            "titlu": "Capsuni",
+            "descriere": "Capsuni proaspete",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "Scramble_tofu.jpg",
+            "titlu": "Tofu",
+            "descriere": "Omleta din tofu facuta de voi",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "zmeura.jpg",
+            "titlu": "Zmeura",
+            "descriere": "Zmeura de padure",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "nuci.jpg",
+            "titlu": "Nuci",
+            "descriere": "Nuci nuci nuci",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "lemon_tofu.jpg",
+            "titlu": "Tofu",
+            "descriere": "Tofu cu lamaie facut de voi",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "Clatite.jpg",
+            "titlu": "CLatite",
+            "descriere": "Clatite proteice facute de voi",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "morcovi.jpg",
+            "titlu": "Morcovi",
+            "descriere": "Multi morcovi",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "gem.jpg",
+            "titlu": "Gem",
+            "descriere": "Gem fara zahar",
+            "sfert_ora": "4"
+        },
+        {
+            "fisier": "Banana_bread.jpg",
+            "titlu": "Banana bread",
+            "descriere": "Chec de banane facut de voi",
+            "sfert_ora": "1"
+        },
+        {
+            "fisier": "ecler.jpg",
+            "titlu": "Ecler",
+            "descriere": "Eclere",
+            "sfert_ora": "2"
+        },
+        {
+            "fisier": "Inghetata.jpg",
+            "titlu": "Inghetata",
+            "descriere": "Inghetata cu nuci",
+            "sfert_ora": "3"
+        },
+        {
+            "fisier": "tiramisu.jpg",
+            "titlu": "Tiramisu",
+            "descriere": "Tiramisu",
+            "sfert_ora": "4"
+        }
+    ]
+}

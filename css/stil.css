@@ -1,0 +1,123 @@
+@charset "UTF-8";
+p {
+  color: var(--culoare-text);
+}
+
+h2 {
+  background-color: var(--culoare1);
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 3px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+truculenta-uniquifier {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 3px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*---------------------------------------------*/
+a:visited {
+  color: var(--culoare4);
+}
+
+a[href^=http]:not(.iframe)::before {
+  content: "⮳";
+  font-size: 150%;
+  margin-right: 0.2em;
+}
+
+a[href^=http]:not(.iframe):hover::before {
+  color: var(--culoare2);
+}
+
+.link-frumos {
+  position: relative;
+}
+
+.link-frumos:visited {
+  color: var(--culoare5);
+}
+
+.link-frumos:hover {
+  background-image: radial-gradient(ellipse, var(--culoare-deschisa) 0%, var(--culoare-deschisa) 40%, transparent 80%, transparent 100%);
+  background-size: 0% 0%;
+  background-position: center;
+  transition: 700ms ease;
+  background-size: 100% 100%;
+}
+
+.link-frumos:active {
+  border: 1px solid var(--culoare-text);
+}
+
+#container {
+  position: relative;
+  display: inline-block;
+}
+
+#text {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  position: relative;
+}
+
+#text-reflected {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform-origin: 0 0;
+  /* conetaza ordinea transformarilor! */
+  transform: rotateX(180deg) skew(-45deg) scaleY(0.5) translate(10px, -25px);
+  opacity: 0.55;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  transition: transform 2s ease;
+  /* adăugăm o tranziție pentru o animare lină */
+}
+
+#text:hover + #text-reflected {
+  transform: rotateX(180deg) skew(-45deg) scaleY(1) translate(10px, -33px);
+  /* creștem înălțimea */
+}
+
+/*-------------separatori-----------------*/
+#separator1 {
+  height: 2rem;
+  background-image: url("/resurse/imagini/fruit-3059616_640.png");
+  background-size: contain;
+  background-position: 0 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  animation: moveBackground 5s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+#separator1:hover {
+  background-image: url("/resurse/imagini/fruit-356519_640.png");
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  animation: moveBackground2 5s linear infinite;
+}
+
+@keyframes moveBackground2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
